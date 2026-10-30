@@ -1,6 +1,8 @@
 # 2021 Formula 1 Season Finale — Abu Dhabi Grand Prix Research Brief
 
-Retrospective research trail for the racing newsletter. All data points below are reported exactly as returned by the F1 data source lookups.
+Retrospective research trail for the racing newsletter on the 2021 season-closing Abu Dhabi Grand Prix at Yas Marina Circuit (Season 2021, Round 22), the round in which Max Verstappen and Lewis Hamilton arrived level on points and the title was decided on the last lap.
+
+All data points below are reported exactly as returned by the F1 data source lookups.
 
 ## 1. Race Session Identification
 
@@ -9,7 +11,9 @@ Retrospective research trail for the racing newsletter. All data points below ar
 | Race | 2021 Abu Dhabi Grand Prix (Season 2021, Round 22) |
 | Venue | Yas Marina Circuit — Abu Dhabi, UAE (lat 24.4672, long 54.6031) |
 | Date | `2021-12-12` (race start `13:00:00Z`) |
-| Session key | **Not returned by the session database.** The `getHistoricalSessions` endpoint returned no record for the 2021 Yas Marina race — queried with year 2021, circuit short names `yas_marina` / `Yas Marina Circuit` / `Yas Marina`, location `Abu Dhabi` / `Yas Island` / `Yas Marina`, country `UAE` / `United Arab Emirates`, and session name `Race`, plus a cache clear — all returned empty. As a control, the same endpoint was queried for other 2021 circuits (Monza, Spa) and for 2023 Abu Dhabi with the same filters; all also returned empty, so the session database's coverage for these events is not exposed through this endpoint. The race date above is reported exactly as returned by the historical race results source for Season 2021 / Round 22. |
+| Session key | **Not returned by the session database.** The `getHistoricalSessions` endpoint returned no record for the 2021 Yas Marina race — queried with year 2021, circuit short names `yas_marina` / `Yas Marina Circuit` / `Yas Marina`, location `Abu Dhabi` / `Yas Island` / `Yas Marina`, country `UAE` / `United Arab Emirates`, and session name `Race`, plus a cache clear — all returned empty. As a control, the same endpoint was queried for other 2021 circuits (Monza, Spa) and for 2023 Abu Dhabi with the same filters; all also returned empty, so the session database's coverage for these events is not exposed through this endpoint. The race date (`2021-12-12`) is reported exactly as returned by the historical race results source for Season 2021 / Round 22. |
+
+**Session-key finding for editors:** the data source exposes no session-level record (and therefore no session key) for the 2021 Yas Marina race; the race identity is pinned down via the historical race results source, which reports the date `2021-12-12` and circuit `yas_marina`.
 
 ## 2. Classified Race Results — 2021 Abu Dhabi Grand Prix (Season 2021, Round 22)
 
@@ -31,9 +35,10 @@ Retrospective research trail for the racing newsletter. All data points below ar
 **Fastest lap:** Max Verstappen, lap 39 — 1:26.103 (220.800 kph), rank 1.
 
 **Podium in finishing order:**
-1. **Max Verstappen** (Red Bull, 33)
-2. **Lewis Hamilton** (Mercedes, 44)
-3. **Carlos Sainz** (Ferrari, 55)
+
+1. **Max Verstappen** (Red Bull, car #33)
+2. **Lewis Hamilton** (Mercedes, car #44)
+3. **Carlos Sainz** (Ferrari, car #55)
 
 ## 3. Podium Driver Profiles (as reported by the profile lookup)
 
